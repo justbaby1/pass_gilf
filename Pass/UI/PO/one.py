@@ -1,0 +1,14 @@
+from selenium import webdriver
+import time
+
+browser = webdriver.Chrome()
+# 设置浏览器大小：全屏
+browser.maximize_window()
+browser.get('https://www.baidu.com')
+time.sleep(2)
+
+# 设置分辨率 500*500
+browser.set_window_size(500,500)
+time.sleep(2)
+
+browser.close()
